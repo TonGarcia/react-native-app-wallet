@@ -36,3 +36,36 @@ Integration between firebase and React Native
 
 # Dependencies
 ![Dependencies](./Dependencies.png)
+
+# React Expo Node
+
+expo-cli supports following Node.js versions:
+* >=12.13.0 <13.0.0 (Maintenance LTS)
+* >=14.0.0 <15.0.0 (Active LTS)
+* >=15.0.0 <17.0.0 (Current Release)
+
+
+# Windows Installation
+
+1. Install Chocolate (need to open power shell as admin): ``` Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) ```
+2. Install dependencies: ``` choco install -y nodejs.install openjdk8 ```
+3. Download android studio & download the SDK Platforms (latest & version Q (10)) & install SDK Tools (ADM or Intel)
+4. Setup environment variables: 
+   1. Add new variable: ANDROID_HOME = C:\Users\user\AppData\Local\Android\Sdk
+   2. Add to the path: C:\Users\user\AppData\Local\Android\Sdk\platform-tools
+5. Windows Terminal (download from Microsoft Store) allows to open any Windows bash type (git bash, powershell & prompt)
+6. Change windows terminal (on settings) to git bash as default bash
+7. On windows terminal (using git bash): ``` npm i -g expo-cli ```
+   1. IF NETWORK ERROR: ``` npm config set registry http://registry.npmjs.org/ ``` && ```  npm config set strict-ssl false ``` && restart windows
+8. Sample project test init: ``` expo init ```
+
+# Expo Cloud
+
+1. Register (sign up): ``` expo register ```
+2. Login (sign in): ``` expo login ```
+3. Check login: ``` expo whoami ``` 
+
+# React Native Icons
+
+1. Package: react-native-vector-icons (https://oblador.github.io/react-native-vector-icons/)
+2. 

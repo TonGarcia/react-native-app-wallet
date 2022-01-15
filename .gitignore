@@ -12,3 +12,7 @@ web-build/
 
 # macOS
 .DS_Store
+.idea
+app/node_modules
+app/.idea
+app/.expo
